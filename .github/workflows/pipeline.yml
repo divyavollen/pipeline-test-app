@@ -57,16 +57,11 @@ jobs:
           branches-badge-filename: branches.svg
           jacoco-csv-file: target/site/jacoco/jacoco.csv
     
-      # - name: Commit and push the badge (if it changed)
-      #   uses: EndBug/add-and-commit@v9
-      #   with:
-      #     default_author: github_actions
-      #     message: 'Commit coverage badge'
-      #     committer_name: GitHub Actions
-      #     add: '*.svg'
-      #     push: origin HEAD:${{ github.head_ref }}
       - name: Commit and push the badge 
         uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Commit coverage badge"
+          file_pattern: '*.svg'
     
       - name: Upload JaCoCo coverage report
         uses: actions/upload-artifact@v4
