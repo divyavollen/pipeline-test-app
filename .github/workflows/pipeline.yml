@@ -62,6 +62,7 @@ jobs:
           message: 'Commit coverage badge'
           committer_name: GitHub Actions
           add: '*.svg'
+          push: origin HEAD:${{ github.head_ref }}
     
       - name: Upload JaCoCo coverage report
         uses: actions/upload-artifact@v4
