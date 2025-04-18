@@ -1,0 +1,3 @@
+pipeline:
+  fail-flag: ${PIPELINE_FAIL_FLAG:false}
+  
