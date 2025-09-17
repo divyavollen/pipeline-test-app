@@ -3,6 +3,7 @@
 
 This repository demonstrates a CI/CD pipeline using GitHub Actions for a Java + Maven application.
 It includes build verification, test execution with coverage reporting, automated PR comments, badge generation, and Docker image publishing.
+Code and development by me. Occasional reviews by others.
 
 # Tools
 - Language / Build: Java 21, Maven
